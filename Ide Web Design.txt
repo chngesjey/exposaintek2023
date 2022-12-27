@@ -1,0 +1,7 @@
+SmartOne
+Belajar coding menjadi lebih mudah!
+
+Terdapat :
+- E-Book, yaitu buku pembelajaran
+- Roadmap, yaitu alur belajar seperti "Belajar Web Developer", "Belajar Machine Learning"
+- Module, yaitu berisi modul buku pembelajaran
