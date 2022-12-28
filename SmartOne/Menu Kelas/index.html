@@ -16,7 +16,9 @@
 </head>
 <body>
 
-    <div class="main-wrapper bg-light">
+    <div class="wrapper main-wrapper bg-light">
+
+      <!-- Navbar -->
 
       <header class="p-3" style="background-color: white;">
         <div class="container">
@@ -42,9 +44,15 @@
               </li>
             </ul>
     
-            <form class="d-flex col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button><input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search&hellip;" aria-label="Search">
-            </form>
+            <div class="input-group me-5" style="width: 300px;">
+              <!-- <span class="btn btn-outline-secondary"><i class="fa-solid fa-magnifying-glass"></i></span> -->
+              <input type="text" class="form-control rounded-pill" placeholder="&#xf002; Search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+
+            <!-- <form class="d-flex col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </button><input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search&hellip;" aria-label="Search">
+            </form> -->
     
             <div class="text-end">
               <button type="button" class="btn me-2">Login</button>
@@ -54,55 +62,91 @@
         </div>
       </header>
 
-      <aside>
-        <div class="d-flex flex-column flex-shrink-0 p-3 shadow-sm" style="width: 280px; height: 568px; background-color: white;">
-          <strong class="mb-3 align-items-center"><span class="fs-4">Filter Kelas</span></strong>
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">
-                <i class="fa-brands fa-html5"></i>
-                HTML
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link link-dark">
-                <i class="fa-brands fa-css3-alt"></i>
-                CSS
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link link-dark">
-                <i class="fa-brands fa-js"></i>
-                JavaScript
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link link-dark">
-                <i class="fa-brands fa-node-js"></i>
-                Node JS
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link link-dark">
-                <i class="fa-brands fa-laravel"></i>
-                Laravel
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link link-dark">
-                <i class="fa-brands fa-rust"></i>
-                Rust
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link link-dark">
-                <i class="fa-brands fa-swift"></i>
-                Swift
-              </a>
-            </li>
-          </ul>
+      <!-- End Navbar -->
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- Sidebar -->
+
+          <div class="sidebar col-md-3 col-lg-2 d-md-block collapse">
+            <aside id="sidebar-wrapper">
+              <div class="p-3">
+                <strong class="mb-3 align-items-center"><span class="fs-4">Filter Kelas</span></strong>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                      <i class="fa-brands fa-html5"></i>
+                      HTML
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <i class="fa-brands fa-css3-alt"></i>
+                      CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <i class="fa-brands fa-js"></i>
+                      JavaScript
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <i class="fa-brands fa-node-js"></i>
+                      Node JS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <i class="fa-brands fa-laravel"></i>
+                      Laravel
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <i class="fa-brands fa-rust"></i>
+                      Rust
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link link-dark">
+                      <i class="fa-brands fa-swift"></i>
+                      Swift
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+
+          <!-- End Sidebar -->
+  
+          <!-- Content -->
+    
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="main-content">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Dashboard</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                  <div class="btn-group me-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                    <span data-feather="calendar" class="align-text-bottom"></span>
+                    This week
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+    
+          <!-- End Content -->
         </div>
-      </aside>
+      </div>
+
 
     </div>
 	
